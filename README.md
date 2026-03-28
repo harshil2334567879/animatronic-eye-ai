@@ -47,4 +47,4 @@ Currently in progress — components acquired, wiring and firmware in developmen
 
 ## 👤 Author
 
-Built by Harshil — [Tech Paisa India](https://techpaisaindia.blogspot.com)
+Built by Harshil 
