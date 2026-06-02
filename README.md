@@ -1,4 +1,4 @@
-Animatronic Eye System
+Animatronic Eye System 👁️👁️
 
 This is a robotic eye setup that moves and reacts to what it sees using a camera and a set of servos. The idea is to make it feel a bit “alive” just through motion — like it’s actually paying attention instead of being a static build.
 
