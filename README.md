@@ -2,7 +2,8 @@ Animatronic Eye System 👁️👁️
 
 This is a robotic eye setup that moves and reacts to what it sees using a camera and a set of servos. The idea is to make it feel a bit “alive” just through motion — like it’s actually paying attention instead of being a static build.
 
-Built with an ESP32-CAM and 6 MG90S servos.
+Built with an ESP32-CAM and 6 MG90S servos. 
+AI was used in this project to write codes!!!
 
 ⸻
 
