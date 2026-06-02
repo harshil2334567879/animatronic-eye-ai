@@ -1,50 +1,49 @@
-# 👁️ Animatronic Eye System with AI
+Animatronic Eye System
 
-An AI-powered animatronic eye system that can see, listen, and speak — built using an ESP32-CAM, Google APIs, and 6 MG90S servos for realistic eye movement.
+This is a robotic eye setup that moves and reacts to what it sees using a camera and a set of servos. The idea is to make it feel a bit “alive” just through motion — like it’s actually paying attention instead of being a static build.
 
----
+Built with an ESP32-CAM and 6 MG90S servos.
 
-## 🧠 How It Works
+⸻
 
-The system uses an **ESP32-CAM (OV3660)** as the brain and camera. It captures video, processes voice input via **Google Speech-to-Text**, generates intelligent responses using **Google Gemini 1.5 Flash**, and speaks back using **Google Text-to-Speech**.
+What this does
 
-The eyes move realistically using **6 MG90S servos** controlled by a **PCA9685 PWM driver** — covering horizontal, vertical, and eyelid movement for both eyes.
+This system behaves like a robotic eye that responds to visual input.
 
-The result is an animatronic eye that can hold a basic AI-powered conversation while physically reacting with lifelike eye movements.
+It:
 
----
+1. Captures video using the ESP32-CAM
+2. Detects basic changes in the frame (motion or shifts)
+3. Moves the eyes and eyelids using servos based on that input
 
-## 🔧 Components
+The goal is realistic movement through simple vision-based control.
 
-| Component | Quantity | Purpose |
-|---|---|---|
-| ESP32-CAM (OV3660) | 1 | Brain + Camera |
-| PCA9685 PWM Servo Driver | 1 | Controls all 6 servos |
-| MG90S Servo Motor | 6 | Eye movement (X, Y, eyelids) |
-| Jumper Wires | Many | Connections |
-| Breadboard | 1 | Prototyping |
+⸻
 
-**APIs Used:**
-- Google Gemini 1.5 Flash — AI responses
-- Google Speech-to-Text — Voice input
-- Google Text-to-Speech — Voice output
+Parts used
 
----
+1. ESP32-CAM (OV3660)
+2. PCA9685 Servo Driver
+3. 6× MG90S Servos
+4. Jumper wires
+5. Breadboard
 
-## 🔌 Wiring
+⸻
 
-A full wiring diagram is included in the `/wiring` folder of this repo.
+How it works
 
-The ESP32-CAM communicates with the PCA9685 over **I2C (SDA/SCL)**. The PCA9685 drives all 6 MG90S servos on separate PWM channels. Power is supplied via a regulated 5V source to avoid brownouts from servo load.
+1. ESP32-CAM captures frames continuously
+2. Basic logic analyzes changes in the image (motion or shift detection)
+3. Movement commands are sent to the PCA9685
+4. The PCA9685 drives 6 servos:
+    1. Left/right eye movement
+    2. Up/down eye movement
+    3. Eyelid motion for blinking and expression
 
----
+Servos are powered separately to avoid voltage drops and instability.
 
-## 🚧 Status
+⸻
 
-Currently in progress — components acquired, wiring and firmware in development.
+Made by
 
----
-
-## 👤 Author
-
-Built by Harshil 
+Harshil
