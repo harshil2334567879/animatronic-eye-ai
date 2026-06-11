@@ -24,10 +24,10 @@ The goal is realistic movement through simple vision-based control.
 Parts used
 
 1. ESP32-CAM (OV3660)
-2. PCA9685 Servo Driver
+2. PCA Servo Driver
 3. 6× MG90S Servos
-4. Jumper wires
-5. Breadboard
+4. 18650 batteries
+5. Screws
 
 ⸻
 
